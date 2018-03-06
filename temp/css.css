@@ -1,0 +1,12 @@
+
+h5 {
+    color: gray;
+    font-family:"Times New Roman";
+}
+
+.center {
+    margin: auto;
+    width: 40%;
+    border: 1px solid #0ff;
+    padding: 20px;
+}

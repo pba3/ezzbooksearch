@@ -73,7 +73,22 @@
     <div class="form-group"> 
        <div class="btn-group">   
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" name="register" class="btn btn-info">Register</button>
+        <button type="submit"  name="register" class="btn btn-info">Register</button>
+        <!--xmlhttprequest function-->
+        !--<p id = "rabbitmq"></p>
+        <!--<script>
+        function loadDoc() {
+          var http = new XMLHttpRequest(); // instantiate XMLHttpRequest and stores in variable http
+          xhttp.onreadyState = function() { //function to be executed when the request receives an answer.
+            if (this.readyState == 4 && this.status == 200){
+              document.getElementeById("rabbit").inneHTML = this.responseText;
+              }
+            };
+            xhttp.open("GET", "https://www.njit.edu/~pba3", true);// Asynchronous since it is true
+            xhttp.send("reg.php");
+          }
+          </script>-->
+        
       </div>
   </div>
 </div>
