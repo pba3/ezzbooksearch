@@ -1,9 +1,7 @@
 <?php
 session_start(); //starts the session
-
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 	ini_set('display_errors', 1);
-
 $username = "";
 $email    = "";
 $type     = "type";
@@ -14,19 +12,20 @@ include("account.php");
 
 // inluded functions code
 include("callfunctions.php");
+$type = isset($_POST['type'])? $_POST['type']: '';
+if (isset($_POST['login'])){
+	echo $_REQUEST['type'];
+}
 
-$type = $_REQUEST['type'];
 
 switch ($type){
 	case 'login':
-
 	$username = $_REQUEST['username'];
 	$password = $_REQUEST['password'];
 	$response = LoGinUser($username, $password);
 	print_r($response);
 	break;
 }
-
 //include ("testRabbitMQClient.php");
 // if the register button is clicked
 if (isset($_POST['register'])){
